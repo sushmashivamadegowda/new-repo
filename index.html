@@ -1,96 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-jar">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="home" class="landing-section">
+        <div class="hero-content">
+            <h1>HELLO, I'M <span class="name">SUSHMA</span></h1>
+            <p class="subtitle">I am a passionate developer specializing in front-end technologies.</p>
+            <p class="description">Dive in to see my work and get to know me better!</p>
+        </div>
+        <a href="#about" class="scroll-button"></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section-container">
+        <div class="about-section">
+            <h1 class="about-heading">About</h1>
+            
+            <div class="about-container">
+                <!-- Left Navigation Arrow -->
+                <div class="nav-arrow left"></div>
+                
+                <!-- About Card -->
+                <div class="about-card">
+                    <div class="profile-section">
+                        <img src="sush photo.jpg" alt="Profile Image"  class="profile-image">
+                    </div>
+                    
+                    <div class="content-section">
+                        <p class="about-text">
+                           I am a <span class="highlight">Python Full Stack Developer</span> with a strong foundation in Python, Django, Flask, HTML, CSS, JavaScript, React, and SQL databases. As a recent graduate with a degree in CSE engineering, I am passionate about building scalable, efficient, and user-friendly web applications that integrate robust back-end logic with modern front-end designs.
+                        </p>
+                        
+                        <p class="about-text">
+                           Driven by curiosity and craft, I specialize in <span class="highlight">responsive UI engineering</span> with HTML, CSS, and React, paired with <span class="highlight">Python back-ends</span> using Django, REST APIs, and SQL data layers. I enjoy shipping <span class="highlight">production-ready features</span>, optimizing performance, and collaborating on products that matter.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Navigation Arrow -->
+                <div class="nav-arrow right"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <h2 class="skills-heading">Skills</h2>
+            <p class="skills-subtitle">
+                A comprehensive overview of my technical expertise and development capabilities
+            </p>
+            
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3 class="category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔧</div>
+                        <h3 class="category-title">Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                    </div>
+                </div>
+
+                <!-- Database & Cloud -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🗄️</div>
+                        <h3 class="category-title">Database </h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-content">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-text">
+                 Each project represents a unique challenge 
+                and showcases different aspects of my development skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-content">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-text">
+                .....
+            </p>
+        </div>
+    </section>
